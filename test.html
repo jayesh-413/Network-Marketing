@@ -1,0 +1,88 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .scroll-div {
+            height: 100%;
+            width: 158px;
+            border: 2px solid red;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-div">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur autem voluptatibus laborum rerum temporibus ea ipsum architecto, nihil aliquam ratione, vero ut omnis eaque mollitia, necessitatibus quis commodi! Minus neque explicabo ratione est illum quidem dolorem pariatur, iste qui quos velit quaerat odit tempore vitae modi molestiae! Inventore, assumenda, consectetur commodi facere eaque tenetur quas corporis, laudantium ipsa quibusdam libero sapiente tempore. Nesciunt, modi suscipit! Quae, ipsam. Temporibus soluta deserunt rerum, repudiandae suscipit assumenda pariatur, fuga ab molestiae eaque dolores provident magnam! Doloremque laborum ducimus magni recusandae doloribus amet cum nesciunt id perspiciatis facilis architecto, ea veniam suscipit repellat quas?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur autem voluptatibus laborum rerum temporibus ea ipsum architecto, nihil aliquam ratione, vero ut omnis eaque mollitia, necessitatibus quis commodi! Minus neque explicabo ratione est illum quidem dolorem pariatur, iste qui quos velit quaerat odit tempore vitae modi molestiae! Inventore, assumenda, consectetur commodi facere eaque tenetur quas corporis, laudantium ipsa quibusdam libero sapiente tempore. Nesciunt, modi suscipit! Quae, ipsam. Temporibus soluta deserunt rerum, repudiandae suscipit assumenda pariatur, fuga ab molestiae eaque dolores provident magnam! Doloremque laborum ducimus magni recusandae doloribus amet cum nesciunt id perspiciatis facilis architecto, ea veniam suscipit repellat quas?</p>
+    </div>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sc-bg{
+            background-color: aquamarine;
+            width: 400px;
+            margin: 10% auto;
+        }
+        .sc-div{
+            width: 400px;
+            background-color: aquamarine;
+            height: 300px;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="sc-bg">
+        <div class="sc-div">
+            <div class="sc-obj">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur deleniti corrupti aperiam tempora dolores eos neque, culpa consequatur consectetur, alias beatae praesentium unde, modi voluptas laborum ad enim nulla autem voluptate ut nihil. Labore, modi. Obcaecati odio quos ad, nam molestias ducimus eum, aperiam repellendus velit ut, quaerat vitae expedita corrupti libero nesciunt quia est. Repudiandae modi tempora soluta eligendi numquam molestias, minima illum! Nesciunt nam, culpa consequatur minima placeat sunt facilis facere debitis, optio pariatur dolorem. Iste vero blanditiis consectetur. Unde cumque error laboriosam. Officia magni ad ullam laborum id, laudantium sint doloribus cum, ea, quasi expedita ducimus placeat atque sed autem? Fugiat voluptatem voluptate amet modi, ipsam dignissimos quibusdam totam architecto eligendi doloremque atque nemo iste voluptatibus sed dolorum laboriosam ipsa! Voluptatibus, earum! Quia voluptatibus eligendi, expedita aliquam ipsa illo quisquam atque eveniet facilis ad, eos dolorum id, ducimus libero? Perspiciatis in eveniet similique nihil, accusamus tenetur quaerat nesciunt id possimus molestiae suscipit, fuga ut adipisci ullam rem veritatis? Aliquid, et! Voluptate quidem tempora rerum odit impedit? Temporibus recusandae quisquam inventore eum, veniam praesentium tenetur saepe maiores, officiis minus officia? Reiciendis incidunt quasi dolor at repellendus minima, consequatur, odio rem id voluptate debitis magnam nulla, velit fuga iste.
+            </div>
+        </div>
+    </div>
+</body>
+</html> -->
+<html>
+<head>
+  <title>Download PDF on Button Click</title>
+</head>
+<body>
+  <button id="downloadBtn">Download PDF</button>
+
+  <script>
+    // Function to handle button click event
+    function downloadPDF() {
+      // URL of the PDF file
+      var pdfUrl = 'file:///C:/Users/Admin/Downloads/FINTOCH%20Public%20Chain%20Launch%2031%20May%2023.pdf';
+
+      // Creating a temporary link element
+      var link = document.createElement('a');
+      link.href = pdfUrl;
+      link.target = '_blank';
+
+      // Adding the download attribute
+      link.download = 'file.pdf';
+
+      // Simulating a click event
+      var clickEvent = new MouseEvent('click', {
+        'view': window,
+        'bubbles': true,
+        'cancelable': false
+      });
+      link.dispatchEvent(clickEvent);
+    }
+
+    // Attaching the click event handler to the button
+    var downloadButton = document.getElementById('downloadBtn');
+    downloadButton.addEventListener('click', downloadPDF);
+  </script>
+</body>
+</html>
